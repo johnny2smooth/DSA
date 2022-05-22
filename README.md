@@ -1,9 +1,7 @@
 # Data Structures and Algorithms Practice
 
-This is a place where I've been pushing my solutions to DS&A problems! I treat this repo as my accountability buddy to ensure that I push code every day. PRACTICE MAKES... better
-
-![practice can be painful](https://media.giphy.com/media/PsV4r7iqBpiik/giphy.gif)
-<img src="https://media.giphy.com/media/PsV4r7iqBpiik/giphy.gif">
+This is a place where I've been pushing my solutions to DS&A problems! I treat this repo as my accountability buddy to ensure that I push code every day. PRACTICE MAKES... better ![practice can be painful](https://media.giphy.com/media/PsV4r7iqBpiik/giphy.gif)
+![practice can be painful](https://media.giphy.com/media/hVlUxzA3mJ4Aw/giphy.gif)
 
 ## How It's Done:
 
