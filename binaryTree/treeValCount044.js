@@ -10,8 +10,7 @@
 
 // psuedo code
 
-// recursive solution
-
+// my recursive solution
 // const treeValueCount = (root, target) => {
 //   if (root === null) return 0;
 //   let sum = 0;
@@ -24,4 +23,28 @@
 //   if (root.val === target) sum += 1;
 
 //   return sum;
+// };
+
+// another recursive solution
+// const treeValueCount = (root, target) => {
+//   if (root === null) return 0;
+//   const match = root.val === target ? 1 : 0;
+//   return match + treeValueCount(root.left, target) + treeValueCount(root.right, target);
+// };
+
+// an iterative solution
+// const treeValueCount = (root, target) => {
+//   if (root === null) return 0;
+
+//   let count = 0;
+//   const stack = [ root ];
+//   while (stack.length > 0) {
+//     const current = stack.pop();
+//     if (current.val === target) count += 1;
+
+//     if (current.left) stack.push(current.left);
+//     if (current.right) stack.push(current.right);
+//   }
+
+//   return count;
 // };
