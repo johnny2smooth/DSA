@@ -64,3 +64,5 @@ const allTreePaths = (root) => {
 
   return paths;
 };
+
+// what is this
