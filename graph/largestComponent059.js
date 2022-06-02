@@ -33,3 +33,26 @@
 //   console.log(visited.size)
 //   return visited.size > largest ? visited.size : largest;
 // }
+
+// const largestComponent = (graph) => {
+//   let largest = 0;
+//   let visited = new Set();
+
+//   for(let node in graph){
+//     let size = explore(graph, node, visited, largest);
+//     if(size > largest) largest = size;
+//   }
+//   return largest;
+// };
+
+// const explore = (graph, current, visited, largest) => {
+//   if(visited.has(current)) return 0;
+//   visited.add(current);
+
+//   let size = 1;
+//   for(let neighbor of graph[current]){
+//     size += explore(graph, neighbor, visited, largest)
+//   }
+
+//   return size;
+// }
