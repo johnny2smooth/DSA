@@ -31,3 +31,14 @@
 //   head.next = prev;
 //   return reverseList(next, head);
 // };
+
+const reverseList = (head, prev = null) => {
+  let current = head;
+  while (current !== null) {
+    let next = current.next;
+    current.next = prev;
+    prev = current;
+    current = next;
+  }
+  return prev;
+};
