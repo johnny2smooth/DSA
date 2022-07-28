@@ -39,3 +39,8 @@
 //   }
 //   return null;
 // };
+
+const getNodeValue = (head, index) => {
+  if (head === null) return null;
+  return index <= 0 ? head.val : getNodeValue(head.next, index - 1);
+};
