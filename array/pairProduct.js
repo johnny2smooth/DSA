@@ -1,27 +1,21 @@
-// Mine
+// array, target
+// return matching indexes
+
+// store visited numbers in a {}
+// I want to store the number as the key and the index as value
+
+// therefore I'll iterate with a basic for loop, so I can easily
+// keep track if i
 
 const pairProduct = (numbers, targetProduct) => {
-  let pair = [];
+  let visited = {};
+
   for (let i = 0; i < numbers.length; i++) {
-    for (let j = 1; j < numbers.length; j++) {
-      let missingNumber = targetProduct / numbers[i];
-      if (missingNumber === numbers[j]) {
-        pair.push(i, j);
-        return pair;
-      }
+    let num = numbers[i];
+    let counterpart = targetProduct / num;
+    if (visited[counterpart]) {
+      return [visited[counterpart], i];
     }
+    visited[num] = i;
   }
 };
-
-// Hashmap
-// const pairProduct = (numbers, targetProduct) => {
-//   const previousNums = {};
-//   for (let i = 0; i < numbers.length; i += 1) {
-//     const num = numbers[i];
-//     const complement = targetProduct / num;
-
-//     if (complement in previousNums) return [ previousNums[complement], i ];
-
-//     previousNums[num] = i;
-//   }
-// };
